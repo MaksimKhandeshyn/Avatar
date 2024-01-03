@@ -21,8 +21,8 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <img src="./images/logo.jpg" alt="logo-avatar" />
+      <div class="container container-position">
+        <img src="./images/logo.jpg" alt="logo-avatar" class="header-img" />
         <nav class="nav">
           <ul class="nav-list list">
             <li class="nav-item">
@@ -39,17 +39,18 @@
         <div class="container-btn">
           <button type="button" class="enter-btn">Увійти</button>
         </div>
-        <div class="switcher-lang">
-          <p>ENG</p>
-          <!--Add img!!!-->
+        <div class="switcher-container">
+          <p class="lang-switcher">ENG</p>
           <img
             src="./images/Switcher (2).jpg"
             alt="switcher"
-            class="switcher"
+            class="switcher-img"
           />
-          <p>UA</p>
+          <p class="lang-switcher">UA</p>
         </div>
       </div>
+      
+      <!--Выкинуть переключатель за границы конетейнера-->
     </header>
     <main>
       <section class="hero">
@@ -63,31 +64,30 @@
             Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє тіло
             залишається, щоб стати частиною Народу. Борись разом з нами!
           </p>
-          <button type="button" class="hero-btn"><div class="txt-btn">Приєднатися до клану</div></button>
+          <button type="button" class="hero-btn">
+            <div class="txt-btn">Приєднатися до клану</div>
+          </button>
         </div>
       </section>
       <section class="quote">
         <div class="container quote-container">
-          <p class="quote-title subtitle">
-            “БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ
+          <p class="quote-title subtitle">“БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ</p>
+          <p class="quote-subtitle">
+            ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.”
           </p>
-          <p class="quote-title">ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ
-            ЗАКІНЧУЄТЬСЯ.”</p>
           <p class="quote-info">Джейк Саллі</p>
           <img src="./images/big-angel.jpg" alt="angel" class="qoute-img" />
         </div>
       </section>
       <section class="trailer">
-        <div class="container">
+        <div class="container trailer-container">
           <button type="button" class="trailer-btn">Дивитись трейлер</button>
         </div>
       </section>
       <section class="quote">
         <div class="container">
-          <p class="quote-heading">
-            “ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ
-          </p>
-          <p class="quote-heading subtitle">ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</p>
+          <p class="quote-heading">“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ</p>
+          <p class="quote-caption">ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</p>
           <p class="quote-info">Джейк Саллі</p>
           <img src="./images/big-angel.jpg" alt="angel" class="qoute-img" />
         </div>
@@ -97,34 +97,46 @@
           <h2 class="navi-title">Вчимо мову На’ві</h2>
           <ul class="navi-list list">
             <li class="navi-item">
-              <h3 class="ua-word">Привіт</h3>
-              <img src="./images/blue-arrow.jpg" alt="arrow" class="arrow" />
-              <p class="navi-word">Kaltxì</p>
+              <div class="list-container">
+                <h3 class="ua-word">Привіт</h3>
+                <img src="./images/blue-arrow.jpg" alt="arrow" class="arrow" />
+                <p class="navi-word">Kaltxì</p>
+              </div>
             </li>
             <li class="navi-item">
-              <h3 class="ua-word">Як справи</h3>
-              <img src="./images/small-angel.jpg" alt="arrow" class="angel" />
-              <p class="navi-word">Ngaru lu fpom srak?</p>
+              <div class="list-container">
+                <h3 class="ua-word">Як справи</h3>
+                <img src="./images/small-angel.jpg" alt="arrow" class="angel" />
+                <p class="navi-word">Ngaru lu fpom srak?</p>
+              </div>
             </li>
             <li class="navi-item">
-              <h3 class="ua-word">Все добре</h3>
-              <img src="./images/blue-arrow.jpg" alt="arrow" class="arrow" />
-              <p class="navi-word">Lu fpom</p>
+              <div class="list-container">
+                <h3 class="ua-word">Все добре</h3>
+                <img src="./images/blue-arrow.jpg" alt="arrow" class="arrow" />
+                <p class="navi-word">Lu fpom</p>
+              </div>
             </li>
             <li class="navi-item">
-              <h3 class="ua-word">Дякую</h3>
-              <img src="./images/blue-arrow.jpg" alt="arrow" class="arrow" />
-              <p class="navi-word">Irayo si</p>
+              <div class="list-container">
+                <h3 class="ua-word">Дякую</h3>
+                <img src="./images/blue-arrow.jpg" alt="arrow" class="arrow" />
+                <p class="navi-word">Irayo si</p>
+              </div>
             </li>
             <li class="navi-item">
-              <h3 class="ua-word">Я бачу тебе</h3>
-              <img src="./images/small-angel.jpg" alt="arrow" class="arrow" />
-              <p class="navi-word">Oel ngati kameie</p>
+              <div class="list-container">
+                <h3 class="ua-word">Я бачу тебе</h3>
+                <img src="./images/small-angel.jpg" alt="arrow" class="arrow" />
+                <p class="navi-word">Oel ngati kameie</p>
+              </div>
             </li>
             <li class="navi-item">
-              <h3 class="ua-word">Слідуй за мною!</h3>
-              <img src="./images/blue-arrow.jpg" alt="arrow" class="arrow" />
-              <p class="navi-word">Nong oet!</p>
+              <div class="list-container">
+                <h3 class="ua-word">Слідуй за мною!</h3>
+                <img src="./images/blue-arrow.jpg" alt="arrow" class="arrow" />
+                <p class="navi-word">Nong oet!</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -134,26 +146,34 @@
           <p class="quote-heading">
             “НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,
           </p>
-          <p class="quote-heading subtitle">ВОНА ЗАХИЩАЄ ЛИШЕ
-            ЖИТТЄВИЙ БАЛАНС.”</p>
+          <p class="quote-caption">ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”</p>
           <p class="quote-info">Нейтірі</p>
           <img src="./images/big-angel.jpg" alt="angel" class="qoute-img" />
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <img src="./images/logo.jpg" alt="logo-avatar" />
+      <div class="container container-position">
+        <img src="./images/logo.jpg" alt="logo-avatar" class="footer-logo" />
         <ul class="footer-list list">
           <li class="footer-item">
-            <p class="footer-info">Q&A E-mail</p>
-            <p class="footer-email">avatartwowqa@gmail.com</p>
+            <div class="footer-list-container">
+              <p class="footer-info">Q&A E-mail</p>
+              <p class="footer-email">avatartwowqa@gmail.com</p>
+            </div>
           </li>
           <li class="footer-item">
-            <p class="footer-info">Cooperation E-mail</p>
-            <p class="footer-email">avatartwowcoop@gmail.com</p>
+            <div class="footer-list-container">
+              <p class="footer-info">Cooperation E-mail</p>
+              <p class="footer-email">avatartwowcoop@gmail.com</p>
+            </div>
           </li>
         </ul>
+      </div>
+      <div class="copyright">
+        <p class="copyright-txt">
+          ©2023 Avatar: The Way Of Water. All rights reserved
+        </p>
       </div>
     </footer>
   </body>

@@ -52,16 +52,58 @@ img {
 body {
   font-family: "Inter";
 }
+.container-position {
+  display: flex;
+}
 .container {
   width: 1037px;
   margin: 0 auto;
   padding: 0 15px;
 }
 .header {
-  background: rgba(43, 74, 97, 0.87)
-    /*url('../images/bg-for-header.jpg') no-repeat*/;
+  background: url("../images/bg-for-header.jpg")
+    no-repeat center;
+  height: 150px;
 }
-
+.header-img {
+  padding-top: 39px;
+}
+.nav {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-item:first-child {
+  margin-left: 168px;
+  margin-right: 38px;
+  margin-top: 63px;
+}
+.nav-item + .nav-item {
+  margin-right: 38px;
+  margin-top: 63px;
+}
+.nav-link {
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.container-btn {
+  margin-top: 54px;
+  /* margin-left: 212px; */
+}
 .enter-btn {
   color: var(--text-btn-color);
   font-family: HeadlandOne;
@@ -73,15 +115,38 @@ body {
   border-bottom-right-radius: 35px;
   background: #0b0e66;
 }
+.switcher-container {
+  margin-left: 49px;
+  display: flex;
+  margin-top: 65px;
+}
+.lang-switcher {
+  color: var(--white-color);
+  font-family: Hammersmith One;
+  line-height: normal;
+}
+.switcher-img {
+  width: 36px;
+  height: 20px;
+}
+
+.hero {
+  width: 1440px;
+  height: 740px;
+  background-image: url("../images/hero-img.jpg");
+  margin: 0 auto;
+}
+
 .hero-info {
-  /*recomment when add bg*/
-  /* color: #fff; */
+  color: var(--white-color);
   width: 298px;
   font-size: 20px;
   line-height: normal;
+  padding-top: 181px;
 }
 .translation {
   width: 376px;
+  padding-top: 0;
 }
 .hero-btn {
   color: var(--text-btn-color);
@@ -95,13 +160,18 @@ body {
   height: 80px;
   padding: 10px 30px 10px 31px;
   border-color: var(--text-btn-color);
+  margin-top: 42px;
 }
 .quote-container {
   padding-top: 76px;
 }
 .quote-title {
   color: #0a3853;
-  text-align: justify;
+  font-size: 36px;
+  line-height: normal;
+}
+.quote-subtitle {
+  color: #0a3853;
   font-size: 36px;
   line-height: normal;
 }
@@ -119,7 +189,11 @@ body {
 
 .trailer {
   background: url("../images/trailer-bg.jpg") no-repeat center 100%;
-  margin: 0 auto;
+  margin-top: 10px;
+}
+.trailer-container {
+  display: flex;
+  justify-content: center;
 }
 .trailer-btn {
   color: var(--text-btn-color);
@@ -137,9 +211,37 @@ body {
   font-size: 36px;
   font-weight: 400;
   line-height: normal;
+  margin-top: 75px;
 }
-.subtitle {
+.quote-caption {
+  color: #141414;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
   text-align: center;
+}
+
+.navi-lang {
+  background: url("../images/mountains.jpg") no-repeat center top;
+  padding-bottom: 57px;
+}
+.navi-list {
+  column-gap: 36px;
+  row-gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navi-item {
+  width: 320px;
+  height: 240px;
+  background: rgba(255, 255, 255, 0.7);
+  flex-basis: calc(100% / 3 - 36px);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.list-container {
+  margin-top: 36px;
 }
 .navi-title {
   color: var(--text-color);
@@ -147,7 +249,11 @@ body {
   font-size: 32px;
   font-weight: 400;
   line-height: normal;
+  text-align: center;
+  padding-top: 58px;
+  padding-bottom: 45px;
 }
+
 .ua-word {
   color: var(--text-color);
   font-family: HeadlandOne;
@@ -155,21 +261,41 @@ body {
   font-weight: 400;
   line-height: 24px; /* 100% */
 }
+.arrow,
+.angel {
+  margin-top: 40px;
+}
 .navi-word {
   font-family: HeadlandOne;
   font-size: 24px;
   line-height: 24px; /* 100% */
+  margin-top: 40px;
+}
+.footer {
+  background: url('../images/hero-img.jpg') no-repeat center;
+}
+.footer-logo {
+  margin-right: 160px;
+}
+.footer-list-container {
+  display: flex;
 }
 .footer-info {
-  /*After adding bg*/
-  /* color: #FFF; */
+  color: var(--white-color);
+  font-size: 20px;
+  line-height: normal;
+  margin-right: 309px;
+}
+.footer-email {
+  color: var(--white-color);
   font-size: 20px;
   line-height: normal;
 }
-.footer-email {
-  /*after adding bg*/
-  /* color: #fff;/ */
 
-  font-size: 20px;
+.copyright-txt {
+  color: var(--white-color);
+  font-size: 14px;
   line-height: normal;
+  text-align: center;
+  margin-top: 49px;
 }
