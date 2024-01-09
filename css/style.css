@@ -297,14 +297,21 @@ body {
   margin: 0 auto;
   background-size: cover;
 }
+.container-footer-list {
+  display: flex;
+}
 .footer-list {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: end;
-}
-.footer-item:first-child {
   margin-left: 160px;
 }
+.footer-item {
+  display: flex;
+}
+/* .footer-item:first-child {
+  margin-left: 160px;
+} */
 .footer-info {
   color: var(--white-color);
   font-size: 20px;
@@ -315,6 +322,7 @@ body {
 }
 .coop-info {
   margin-right: 234px;
+  width: 270px;
 }
 .footer-email {
   color: var(--white-color);
