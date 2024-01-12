@@ -74,6 +74,9 @@ body {
   margin: 0 auto;
   margin-bottom: 3px;
 }
+.link-logo {
+  display: contents;
+}
 .nav {
   display: flex;
   justify-content: center;
