@@ -147,11 +147,16 @@ body {
   font-family: Hammersmith One;
   line-height: normal;
 }
+.eng {
+  margin-right: 10px;
+}
 .switcher-img {
   width: 36px;
   height: 20px;
 }
-
+.ua {
+  margin-left: 10px;
+}
 .hero {
   width: 1440px;
   height: 740px;
