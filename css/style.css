@@ -103,10 +103,7 @@ body {
   text-align: center;
   font-family: Inter;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  display: block;
-  max-width: 89px;
 }
 .about-us {
   display: block;
@@ -310,7 +307,8 @@ body {
 }
 .arrow,
 .angel {
-  margin-top: 40px;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 .navi-word {
   font-family: HeadlandOne;
@@ -342,19 +340,26 @@ body {
 .footer-item {
   display: flex;
 }
-/* .footer-item:first-child {
-  margin-left: 160px;
-} */
 .footer-info {
   color: var(--white-color);
   font-size: 20px;
   line-height: normal;
 }
 .qa-info {
-  margin-right: 309px;
+  margin-right: 20px;
+}
+.footer-img-container {
+  display: flex;
+  align-items: center;
+}
+.footer-img {
+  width: 269px;
+  height: 2px;
+}
+.qa-email {
+  margin-left: 20px;
 }
 .coop-info {
-  margin-right: 146px;
   width: 270px;
 }
 .footer-email {
@@ -362,7 +367,9 @@ body {
   font-size: 20px;
   line-height: normal;
 }
-
+.coop-email {
+  margin-left: 20px;
+}
 .copyright-txt {
   color: var(--white-color);
   font-size: 14px;
