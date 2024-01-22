@@ -104,6 +104,8 @@ body {
   font-family: Inter;
   font-size: 20px;
   font-weight: 600;
+  display: block;
+  width: 89px;
 }
 .about-us {
   display: block;
@@ -192,17 +194,15 @@ body {
   border-color: var(--text-btn-color);
   margin-top: 42px;
 }
-
 .social-media {
   display: flex;
   align-items: center;
   margin-left: 622px;
 }
-
-.icon + .icon {
+.sm-link + .sm-link {
+  display: block;
   margin-top: 27px;
 }
-
 .quote-container {
   padding-top: 76px;
 }
