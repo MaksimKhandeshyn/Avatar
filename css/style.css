@@ -325,21 +325,38 @@ body {
   margin: 0 auto;
   background-size: cover;
 }
+/* .footer-logo {
+  padding-left: 204px;
+} */
 .container-footer-list {
   display: flex;
   padding-top: 80px;
+}
+.footer-link-logo::after {
+  content: "";
+  display: block;
+  background: url('../images/line-footer.png') center;
+  width: 2px;
+  height: 153px;
+  margin-left: 80px;
+}
+.footer-logo {
+  width: 183px;
+  height: 70px;
+  align-self: center;
 }
 .line-footer {
   margin-left: 80px;
 }
 .footer-list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   margin-left: 80px;
+  align-self: center;
 }
 .footer-item {
   display: flex;
+}
+.footer-item:nth-child(2) {
+  margin-top: 16px;
 }
 .footer-info {
   color: var(--white-color);
