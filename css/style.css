@@ -327,10 +327,8 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background-size: cover;
+  background-position: center;
 }
-/* .footer-logo {
-  padding-left: 204px;
-} */
 .container-footer-list {
   display: flex;
   padding-top: 80px;
