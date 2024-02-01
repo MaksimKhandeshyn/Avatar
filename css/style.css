@@ -78,7 +78,7 @@ body {
   display: contents;
 }
 .logo {
-  padding-left: 204px;
+  margin-left: 204px;
 }
 .nav {
   display: flex;
@@ -328,6 +328,7 @@ body {
   margin: 0 auto;
   background-size: cover;
   background-position: center;
+  padding-bottom: 25px;
 }
 .container-footer-list {
   display: flex;
