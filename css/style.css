@@ -329,6 +329,7 @@ body {
   background-size: cover;
   background-position: center;
   padding-bottom: 25px;
+  padding-top: 35px;
 }
 .container-footer-list {
   display: flex;
@@ -337,7 +338,7 @@ body {
 .footer-link-logo::after {
   content: "";
   display: block;
-  background: url('../images/line-footer.png') center;
+  background: url("../images/line-footer.png") center;
   width: 2px;
   height: 153px;
   margin-left: 80px;
@@ -396,5 +397,4 @@ body {
   line-height: normal;
   text-align: justify;
   margin-left: 678px;
-  padding-bottom: 25px;
 }
