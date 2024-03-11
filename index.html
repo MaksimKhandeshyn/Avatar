@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./icons/Vector.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -74,7 +75,7 @@
               class="sm-link"
             >
               <svg width="30" height="30" class="sm-icon">
-                <use href="./icons/symbol-defs.svg#icon-inst-1"></use>
+                <use href="./icons/symbol-defs.svg(1)#icon-inst-1"></use>
               </svg>
             </a>
             <a
@@ -83,7 +84,7 @@
               class="sm-link"
             >
               <svg width="30" height="30" class="sm-icon">
-                <use href="./icons/symbol-defs.svg#icon-twitter-1"></use>
+                <use href="./icons/symbol-defs(1).svg#icon-twitter-1"></use>
               </svg>
             </a>
             <a
@@ -92,12 +93,13 @@
               class="sm-link"
             >
               <svg width="50" height="30" class="sm-link">
-                <use href="./icons/symbol-defs.svg#icon-youtube-1"></use>
+                <use href="./icons/symbol-defs(1).svg#icon-youtube-1"></use>
               </svg>
             </a>
           </div>
         </div>
       </section>
+
       <section class="quote">
         <div class="container quote-container">
           <p class="quote-title subtitle">
@@ -110,11 +112,13 @@
           </svg>
         </div>
       </section>
+
       <section class="trailer">
         <div class="container trailer-container">
           <button type="button" class="trailer-btn">Дивитись трейлер</button>
         </div>
       </section>
+
       <section class="quote">
         <div class="container">
           <p class="quote-heading">
@@ -125,6 +129,7 @@
           <img src="./images/big-angel.jpg" alt="angel" class="qoute-img" />
         </div>
       </section>
+
       <section class="navi-lang">
         <div class="container">
           <h2 class="navi-title">Вчимо мову На’ві</h2>
@@ -174,6 +179,7 @@
           </ul>
         </div>
       </section>
+
       <section class="quote">
         <div class="container">
           <p class="quote-heading">
@@ -232,5 +238,30 @@
         ©2023 Avatar: The Way Of Water. All rights reserved
       </small>
     </footer>
+    <!-- Modal Window -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close" type="button">
+          <svg class="close-icon" width="14" height="14">
+            <use href="./icons/symbol-defs.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <ul class="modal-list list">
+            <li class="modal-item">
+              <label for="name" class="form-label">Ім'я</label><br>
+              <input type="text" name="name" id="name" class="form-input" />
+            </li>
+            <li class="modal-item">
+              <label for="email" class="form-label">Email</label><br>
+              <input type="email" name="email" id="email" class="form-input" />
+            </li>
+          </ul>
+
+          <button class="modal-btn" type="button">Приєднуйтеся до клану</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
