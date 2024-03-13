@@ -404,17 +404,20 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: var(--text-btn-color);
+  /* background-color: var(--text-btn-color); */
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 .modal {
   position: absolute;
   width: 600px;
   height: 404px;
-  outline: 1px black solid;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('../images/bg-modal.png');
+  background-image: url("../images/bg-modal.png");
   background-size: cover;
 }
 .modal-close {
@@ -446,6 +449,7 @@ body {
   width: 440px;
   height: 40px;
   width: 440px;
+  padding-left: 5px;
 }
 .modal-btn {
   border: 3px solid var(--text-btn-color);

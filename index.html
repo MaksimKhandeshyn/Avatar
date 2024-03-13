@@ -65,7 +65,9 @@
             Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє тіло
             залишається, щоб стати частиною Народу. Борись разом з нами!
           </p>
-          <button type="button" class="hero-btn">Приєднатися до клану</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Приєднатися до клану
+          </button>
         </div>
         <div class="social-media">
           <div class="container">
@@ -75,7 +77,7 @@
               class="sm-link"
             >
               <svg width="30" height="30" class="sm-icon">
-                <use href="./icons/symbol-defs.svg(1)#icon-inst-1"></use>
+                <use href="./icons/symbol-defs(1).svg#icon-inst-1"></use>
               </svg>
             </a>
             <a
@@ -239,9 +241,9 @@
       </small>
     </footer>
     <!-- Modal Window -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <button class="modal-close" type="button">
+        <button class="modal-close" type="button" data-modal-close>
           <svg class="close-icon" width="14" height="14">
             <use href="./icons/symbol-defs.svg#icon-close-btn"></use>
           </svg>
@@ -249,12 +251,24 @@
         <form class="modal-form">
           <ul class="modal-list list">
             <li class="modal-item">
-              <label for="name" class="form-label">Ім'я</label><br>
-              <input type="text" name="name" id="name" class="form-input" />
+              <label for="name" class="form-label">Ім'я</label><br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-input"
+                placeholder="Maksim Khandeshin"
+              />
             </li>
             <li class="modal-item">
-              <label for="email" class="form-label">Email</label><br>
-              <input type="email" name="email" id="email" class="form-input" />
+              <label for="email" class="form-label">Email</label><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                placeholder="example@gmail.com"
+              />
             </li>
           </ul>
 
